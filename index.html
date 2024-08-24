@@ -1,0 +1,27 @@
+<!-- Michael Kellems -->
+<!-- CIT 215 -->
+<!-- 8/24/24 -->
+<!-- Prof. Kane -->
+
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head> 
+        <meta charset = "UTF-80">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0"?>
+        <title> document </title>
+    </head>
+
+    <body>
+        <P> What language as created to add interactivity to the web?     <input class = "inpbox" type = "text"> </input> </P> 
+    </body>
+
+    <script>
+        alert("Welcome");
+        alert(document.querySelector('.inpbox'));
+
+        var inptext = document.querySelector('.inpbox');
+
+        inptext.addEventListener('focusout', (event) => {alert(inptext.value)});
+    </script>
+</html>
